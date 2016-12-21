@@ -1,0 +1,89 @@
+首先我们要安装python, 我们描述的是在 windows x86_64 下面安装，下载路径：
+https://www.python.org/ftp/python/3.5.2/python-3.5.2-amd64.exe
+
+下载后，点击运行它，然后安装到一个目录下，建议为：
+C:\Program Files\Python\Python35
+
+在弹出的安装界面中，特别要注意勾上Add Python 3.5.2 to PATH，然后点“Install Now”即可完成安装。
+
+运行Python
+安装成功后，打开命令提示符窗口，敲入python后：
+C:\Users\Administrator>python
+Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 25 2016, 22:18:55) [MSC v.1900 64 bit (AM
+D64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+
+看到上面的画面，就说明Python安装成功！
+
+你看到提示符>>>就表示我们已经在Python交互式环境中了，可以输入任何Python代码，回车后会立刻得到执行结果。
+现在，输入exit()并回车，就可以退出Python交互式环境（直接关掉命令行窗口也可以）。
+
+
+在命令行模式下，可以执行python进入Python交互式环境，也可以执行python hello.py运行一个.py文件。
+
+
+有同学问，能不能像.exe文件那样直接运行.py文件呢？在Windows上是不行的，
+但是，在Mac和Linux上是可以的，方法是在.py文件的第一行加上一个特殊的注释：
+#!/usr/bin/env python3
+print('hello, world')
+
+然后，通过命令给hello.py以执行权限：
+$ chmod a+x hello.py
+
+就可以直接运行hello.py了，比如在Mac下运行：
+./hello.py
+
+Python使用缩进来组织代码块，请务必遵守约定俗成的习惯，坚持使用4个空格的缩进。
+
+在文本编辑器中，需要设置把Tab自动转换为4个空格，确保不混用Tab和空格。
+
+
+
+开发工具，我选择eclipse，eclipse要安装插件PyDev.
+见http://www.pydev.org
+见：http://www.pydev.org/manual_101_root.html
+
+PyDev requires java 8 and Eclipse 4.6 (Neon) in order to run.
+
+详见：http://www.pydev.org/manual_101_install.html
+
+安装插件PyDev详细说明如下：
+方式一：
+将eclipse打开， Help > Install New Software > Add, 在弹出的对话框中输入：
+Name: PyDev and PyDev Extensions
+Location: http://www.pydev.org/updates
+
+点OK， 然后在弹出的列表中选择 PyDev for Eclipse，
+注意：取消选择 'Contact all update sites during install to find required software' 
+
+然后一路next就可以了。
+
+方式二：
+到http://sourceforge.net/projects/pydev/files/ 将PyDev 5.4.0.zip下载回来，
+将解压出来的文件放到eclipse/dropins 文件夹下并重启 Eclipse
+
+Checking the installation
+
+You can verify if it is correctly installed going to the menu 'window > preferences' and checking if there is a PyDev item under that.
+
+
+配置解析器
+window > preferences > PyDev > Interpreter - Python，在上方的Python interpreters点New然后输入
+Interpreter Name:Python35
+Interpreter Executable: C:\Program Files\Python\Python35\python.exe
+点确认即可
+
+创建python项目
+file > new > project > PyDev > PyDev project
+1. Project names: 输入project name
+2. Project contents: project location
+3. Project type: select Python
+4. Grammar Version: select 2.7
+5. Interpreter: select Python35
+6. check "Create 'src' folder and add it to the PYTHONPATH"
+then click Finish button
+
+
+
+
