@@ -21,4 +21,6 @@ python
 开发环境，选择Pycharm, 下载地址：
 https://download.jetbrains.com/python/pycharm-community-2016.3.1.exe
 
-
+不能在python的注释中写中文，否则报错
+# 这样会报错
+# This is ok.
