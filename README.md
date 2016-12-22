@@ -1,2 +1,4 @@
-# python3-learning
-My python 3.5.2 learning note.
+# python-learning
+My python learning note.
+
+including python 2.7.13 and 3.5.2
