@@ -21,6 +21,11 @@ python
 开发环境，选择Pycharm, 下载地址：
 https://download.jetbrains.com/python/pycharm-community-2016.3.1.exe
 
-不能在python的注释中写中文，否则报错
-# 这样会报错
-# This is ok.
+Pycharm 下Non-ASCII character '\xe5' in file.. 解决办法
+在文件的第一行加上如下代码即可：
+# -*- coding: utf-8 -*-
+
+注：此语句一定要添加在源代码的第一行或第二行，因为第一行有可能为：
+#!/usr/bin/env python
+第一行注释是为了告诉Linux/OS X系统，这是一个Python可执行程序，Windows系统会忽略这个注释；
+
