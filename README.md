@@ -2,3 +2,5 @@
 My python learning note.
 
 including python 2.7.13 and 3.5.2
+
+学习参考：http://www.liaoxuefeng.com/
