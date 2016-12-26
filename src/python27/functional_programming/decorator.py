@@ -26,6 +26,7 @@ def now2():
 now2()
 print now2.__name__
 
+
 def log2(text):
     def decorator(func):
         @functools.wraps(func)
